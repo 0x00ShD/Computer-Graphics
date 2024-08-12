@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1683046523 source:d:\fcai\second semster\graphics computer\project graphics\main.cpp
+	<tchar.h>
+	<windows.h>
+
+1684609691 source:d:\fcai\second semster\graphics computer\project graphics-codeblocks\main.cpp
+	<tchar.h>
+	<windows.h>
+	<cmath>
+	<iostream>
+	<vector>
+	<stack>
+	<list>
+	<stdio.h>
+	<cmath>
+	<fstream>
+	<sstream>
+

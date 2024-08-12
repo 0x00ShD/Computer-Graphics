@@ -1,0 +1,54 @@
+﻿  Project 1.cpp
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(13,16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(100,20): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(115,17): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(130,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(130,33): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(130,46): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(149,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(149,33): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(149,47): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(168,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(168,34): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(168,48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(187,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(187,34): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(187,48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(206,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(206,34): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(206,48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(225,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(225,34): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(225,47): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(244,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(244,33): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(244,46): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(263,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(263,33): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(263,46): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(317,37): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(317,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(336,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(336,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(655,53): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(655,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(702,50): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(703,53): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(853,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(854,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(886,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(887,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(892,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(892,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(909,41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(913,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(913,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(1062,46): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(1062,40): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(1062,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(1062,28): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(1091,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(1114,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(1136,9): warning C4101: 'r': unreferenced local variable
+D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\Project 1\Project 1.cpp(1728): warning C4715: 'WndProc': not all control paths return a value
+  Project 1.vcxproj -> D:\FCAI\Second semster\Graphics computer\Project Graphics-vscode\x64\Debug\Project 1.exe

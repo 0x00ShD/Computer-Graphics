@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1584205424 source:d:\fcai\computergraphics\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1584205424 d:\fcai\computergraphics\resource.h
+
+1680092531 source:d:\fcai\computergraphics\main.cpp
+	<tchar.h>
+	<windows.h>
+	<math.h>
+	<iostream>
+
+1680092531 source:d:\fcai\second semster\graphics computer\ass.1\computergraphics\main.cpp
+	<tchar.h>
+	<windows.h>
+	<math.h>
+	<iostream>
+

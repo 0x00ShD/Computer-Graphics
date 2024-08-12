@@ -1,0 +1,145 @@
+void SaveBitmapToFile(HBITMAP hBitmap, LPCWSTR lpFileName)
+{
+	// Open the file for writing
+	HANDLE hFile = CreateFile(lpFileName, GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+	if (hFile == INVALID_HANDLE_VALUE)
+	{
+		MessageBox(NULL, L"Error creating file", L"Error", MB_OK);
+		return;
+	}
+
+	// Get information about the bitmap
+	BITMAP bitmap;
+	GetObject(hBitmap, sizeof(BITMAP), &bitmap);
+
+	// Create a BITMAPFILEHEADER and BITMAPINFOHEADER
+	BITMAPFILEHEADER fileHeader;
+	fileHeader.bfType = 0x4D42;
+	fileHeader.bfSize = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER) + bitmap.bmWidthBytes * bitmap.bmHeight;
+	fileHeader.bfReserved1 = 0;
+	fileHeader.bfReserved2 = 0;
+	fileHeader.bfOffBits = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER);
+
+	BITMAPINFOHEADER infoHeader;
+	infoHeader.biSize = sizeof(BITMAPINFOHEADER);
+	infoHeader.biWidth = bitmap.bmWidth;
+	infoHeader.biHeight = bitmap.bmHeight;
+	infoHeader.biPlanes = 1;
+	infoHeader.biBitCount = bitmap.bmBitsPixel;
+	infoHeader.biCompression = BI_RGB;
+	infoHeader.biSizeImage = 0;
+	infoHeader.biXPelsPerMeter = 0;
+	infoHeader.biYPelsPerMeter = 0;
+	infoHeader.biClrUsed = 0;
+	infoHeader.biClrImportant = 0;
+
+	// Write the BITMAPFILEHEADER and BITMAPINFOHEADER to the file
+	DWORD bytesWritten;
+	WriteFile(hFile, &fileHeader, sizeof(BITMAPFILEHEADER), &bytesWritten, NULL);
+	WriteFile(hFile, &infoHeader, sizeof(BITMAPINFOHEADER), &bytesWritten, NULL);
+
+	// Write the bitmap data to the file
+	BYTE* pData = new BYTE[bitmap.bmWidthBytes * bitmap.bmHeight];
+	GetBitmapBits(hBitmap, bitmap.bmWidthBytes * bitmap.bmHeight, pData);
+	WriteFile(hFile, pData, bitmap.bmWidthBytes * bitmap.bmHeight, &bytesWritten, NULL);
+	delete[] pData;
+
+	// Close the file
+	CloseHandle(hFile);
+}
+
+
+
+// Cases //
+
+
+
+
+case WM_COMMAND:
+		switch (LOWORD(wp))
+		{
+		case 1:
+			hdc = GetDC(hWnd);
+			RECT rect;
+			GetClientRect(hWnd, &rect);
+			FillRect(hdc, &rect, (HBRUSH)(COLOR_WINDOW + 1));
+			ReleaseDC(hWnd, hdc);
+			break;
+		case 2:
+		{
+			// Get the device context of the window
+			HDC hdc = GetDC(hWnd);
+
+			// Create a memory device context
+			HDC memDC = CreateCompatibleDC(hdc);
+
+			// Get the dimensions of the client area
+			RECT rect;
+			GetClientRect(hWnd, &rect);
+			int width = rect.right - rect.left;
+			int height = rect.bottom - rect.top;
+
+			// Create a bitmap to hold the screen image
+			HBITMAP bitmap = CreateCompatibleBitmap(hdc, width, height);
+
+			// Select the bitmap into the memory device context
+			HGDIOBJ oldBitmap = SelectObject(memDC, bitmap);
+
+			// Copy the screen image to the memory device context
+			BitBlt(memDC, 0, 0, width, height, hdc, 0, 0, SRCCOPY);
+
+			// Save the bitmap to a file using the SaveFileDialog
+			OPENFILENAME ofn;
+			wchar_t szFileName[MAX_PATH] = L"";
+			ZeroMemory(&ofn, sizeof(ofn));
+			ofn.lStructSize = sizeof(ofn);
+			ofn.hwndOwner = hWnd;
+			ofn.lpstrFilter = L"Bitmap Files (*.jpg)\0*.jpg\0All Files (*.*)\0*.*\0";
+			ofn.lpstrFile = szFileName;
+			ofn.nMaxFile = MAX_PATH;
+			ofn.Flags = OFN_EXPLORER | OFN_OVERWRITEPROMPT;
+			ofn.lpstrDefExt = L"jpg";
+			if (GetSaveFileName(&ofn))
+			{
+				SaveBitmapToFile(bitmap, ofn.lpstrFile);
+			}
+
+			// Clean up
+			SelectObject(memDC, oldBitmap);
+			DeleteObject(bitmap);
+			DeleteDC(memDC);
+			ReleaseDC(hWnd, hdc);
+		}
+		case 3:
+			if (wp == 3) {
+				OPENFILENAME ofn;
+				wchar_t szFileName[MAX_PATH] = L"";
+				ZeroMemory(&ofn, sizeof(ofn));
+				ofn.lStructSize = sizeof(ofn);
+				ofn.hwndOwner = hWnd;
+				ofn.lpstrFilter = L"Image Files (*.bmp;*.jpg;*.png)\0*.bmp;*.jpg;*.png\0All Files (*.*)\0*.*\0";
+				ofn.lpstrFile = szFileName;
+				ofn.nMaxFile = MAX_PATH;
+				ofn.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
+				ofn.lpstrDefExt = L"bmp";
+				if (GetOpenFileName(&ofn)) {
+					HBITMAP hBitmap = (HBITMAP)LoadImage(NULL, szFileName, IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
+					if (hBitmap != NULL) {
+						hdc = GetDC(hWnd);
+						BITMAP bm;
+						GetObject(hBitmap, sizeof(bm), &bm);
+						HDC hdcMem = CreateCompatibleDC(hdc);
+						HBITMAP hOldBitmap = (HBITMAP)SelectObject(hdcMem, hBitmap);
+						StretchBlt(hdc, 0, 0, bm.bmWidth, bm.bmHeight, hdcMem, 0, 0, bm.bmWidth, bm.bmHeight, SRCCOPY);
+						SelectObject(hdcMem, hOldBitmap);
+						DeleteDC(hdcMem);
+						DeleteObject(hBitmap);
+						ReleaseDC(hWnd, hdc);
+					}
+					else {
+						MessageBox(hWnd, L"Failed to load image file.", L"Error", MB_OK | MB_ICONERROR);
+					}
+				}
+			}
+		}
+		break;

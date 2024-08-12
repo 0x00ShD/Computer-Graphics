@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1684093552 source:d:\fcai\second semster\graphics computer\project cg\main.cpp
+	<tchar.h>
+	<Windows.h>
+	<wingdi.h>
+	<gdiplus.h>
+

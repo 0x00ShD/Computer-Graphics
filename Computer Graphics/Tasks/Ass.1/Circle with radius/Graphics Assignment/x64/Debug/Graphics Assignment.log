@@ -1,0 +1,3 @@
+﻿  Graphics Assignment.cpp
+D:\FCAI\Second semster\Graphics computer\Ass.1\Graphics Assignment\Graphics Assignment\Graphics Assignment.cpp(104,17): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Graphics Assignment.vcxproj -> D:\FCAI\Second semster\Graphics computer\Ass.1\Graphics Assignment\x64\Debug\Graphics Assignment.exe
